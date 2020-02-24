@@ -1,2 +1,2 @@
-# EasyInstallPy
+# EasyInstall
 Maintain some scripts to make the fucking installations easier.
