@@ -38,7 +38,7 @@ pip3 install --upgrade pip
 pip3 install virtualenv
 pip3 install virutalenvwrapper
 echo "export WORKON_HOME=$HOME/.virtualenvs" >> $profile_path
-echo "source /usr/local/bin/virtualenvwrapper.sh" $profile_path
+echo "source /usr/local/bin/virtualenvwrapper.sh" >> $profile_path
 source $profile_path
 
 # step 3: clone dep repos and rex
