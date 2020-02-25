@@ -92,7 +92,7 @@ echo "[*]Install Finished."
 # step 5: call test_rex.py to test installation correctly
 echo "[*]Testing rex with its script..."
 script_path=$repo_path/rex/tests/test_rex.py
-ipython script_path linux_stacksmash_32()
-ipython script_path linux_stacksmash_64()
+ipython $script_path linux_stacksmash_32()
+ipython $script_path linux_stacksmash_64()
 echo "[*]Testing finished."
 
