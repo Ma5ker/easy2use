@@ -7,4 +7,5 @@ Maintain some scripts to make the fucking installations easier.
   - get tools needed and install [v8](https://v8.dev/docs) 
 - [pwnEnvCreate.py](./pwnEnvCreate.py)
   - make [pwndocker](https://github.com/skysider/pwndocker.git) eaiser to use(following its readme)
-  - use `docker pull skysider/pwndocker` to get docker image
+  - use `docker pull ma5ker/pwndocker` to get docker image
+  - ma5ker/pwndocker is based on skysider/pwndocker,add some tools

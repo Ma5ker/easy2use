@@ -50,7 +50,7 @@ def main():
     else:
         print("[-]File path error,will not copy it")
 
-    cmd += " --cap-add=SYS_PTRACE skysider/pwndocker"
+    cmd += " --cap-add=SYS_PTRACE ma5ker/pwndocker"
     print(cmd)
     retcode = os.system(cmd)
     retcode = retcode >> 8
