@@ -17,7 +17,7 @@ def main():
     args = parser.parse_args()
     if len(sys.argv)== 1:
         print("Use --help or -h to get help.")
-        exit()
+        sys.exit()
     stopcontainer = args.stop
     hostname = args.hostname
     dockername = args.name
@@ -29,7 +29,7 @@ def main():
         cmd = "docker container stop "+ stopcontainer
         print(cmd)
         os.system(cmd)
-        exit()
+        sys.exit()
 
     cmd = "docker run -d --rm"
     if hostname!=None:
@@ -64,7 +64,7 @@ def main():
     retcode = retcode >> 8
     if retcode!=0:
         print("[x]Creating container error.")
-        exit()
+        sys.exit()
     print("[+]Creating container success")
     cmd = "docker exec -it "+dockername+" /bin/bash"
     print(cmd)
