@@ -7,3 +7,5 @@ Maintain some scripts to make the fucking installations easier.
   - make [pwndocker](https://hub.docker.com/repository/docker/ma5ker/pwndocker) eaiser to use(following its readme)
   - use `docker pull ma5ker/pwndocker` to get docker image
   - ma5ker/pwndocker is based on skysider/pwndocker,add some tools
+- [git_proxy]
+  - set git proxy on WSL2(Ip changes everytime Win10 restart)

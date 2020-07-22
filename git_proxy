@@ -1,0 +1,20 @@
+#!/usr/bin/env python3
+'''
+This script is used to set WSL2 proxy with windows 10 socks
+because the fucking ip changes everytime system start. 
+'''
+import subprocess
+import os
+cmd = "ip route | grep default | awk \'{print $3}\'"
+ip_win10 = subprocess.getoutput(cmd)
+http_proxy = "socks5://"+ip_win10+":8888"
+print("[*]Get route ip:",ip_win10)
+cmd1 = "git config --global --unset http.proxy"
+cmd2 = "git config --global --unset https.proxy"
+os.system(cmd1)
+os.system(cmd2)
+cmd1 = "git config --global http.proxy "+http_proxy
+cmd2 = "git config --global https.proxy "+http_proxy
+os.system(cmd1)
+os.system(cmd2)
+print("[*]Have set git proxy to ",http_proxy)
