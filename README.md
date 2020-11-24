@@ -9,4 +9,6 @@ Some scripts to make something easy to use, make life meaningful.
   - ma5ker/pwndocker is based on skysider/pwndocker,add some tools
 - [git_proxy](./git_proxy)
   - set git proxy on WSL2(Ip changes everytime Win10 restart)
-- vmware tools
+- vmware tools :as their names
+  - mount-shared-folders
+  - restart-vm-tools
