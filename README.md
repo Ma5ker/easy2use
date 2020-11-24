@@ -1,5 +1,5 @@
-# EasyInstall
-Maintain some scripts to make the fucking installations easier.
+# easy2use
+Some scripts to make something easy to use, make life meaningful.
 
 - [rex install](./rex_install.sh)
   - install [rex](https://github.com/angr/rex.git) and its dependent libs in a shell script
@@ -9,3 +9,4 @@ Maintain some scripts to make the fucking installations easier.
   - ma5ker/pwndocker is based on skysider/pwndocker,add some tools
 - [git_proxy](./git_proxy)
   - set git proxy on WSL2(Ip changes everytime Win10 restart)
+- vmware tools
