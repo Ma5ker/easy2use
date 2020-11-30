@@ -51,7 +51,7 @@ if($port -eq 0 ){
     $docker_params += "-p", $port,":",$port
 }
 
-if ( -not {Test-Path($folder)} ) {
+if ( -not (Test-Path($folder)) ) {
     Write-Host "[*]folder path not exist,will not mounted to the container."
 }else {
     $folder = $ExecutionContext.SessionState.Path.GetUnresolvedProviderPathFromPSPath($folder)
